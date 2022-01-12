@@ -20,6 +20,7 @@
   </head>
   <body>
     <div class="container-fluid">
+      <!-- navbar -->
       <div class="row">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
@@ -86,7 +87,7 @@
                     <li>
                       <a
                         class="dropdown-item"
-                        href="#"
+                        href="../Login/index.html"
                         style="
                           background-color: #d11f5b;
                           color: white;
@@ -103,6 +104,7 @@
         </nav>
       </div>
       <!-- end navbar -->
+      
       <div
         class="bar"
         style="
@@ -115,9 +117,22 @@
           border-radius: 1rem;
         "
       ></div>
+      <!-- submission confirmation -->
+      <div class="mysuccess hide">
+        <div class="row m-5 p-5 suceessSubmission " style="display: flex; justify-content: center;" id="hide">
+        
+          <img class="" style=" width: 7rem;" src="//img.icons8.com/color/144/000000/ok--v1.png"/>
+        
+        
+          <div class="h1 text-center">Prescription Successfull</div>
+          <button class="btn btn-primary m-3" style="width: 15rem;"><a href="../index.html" style="text-decoration: none; color: white;">View Appointments</a></button>
+        
+      </div>
+      </div>
+      <!-- end of submission confirmation -->
 
       <!-- container -->
-      <div class="container appointments">
+      <div class="container appointments " >
         <div
           class="appointmentID"
           style="margin: 2rem 0rem 0 2rem; padding-left: 2rem"
@@ -136,14 +151,14 @@
           </div>
           <div class="identifiers p-5">
             <ul style="list-style: none">
-              <li>: PID001</li>
-              <li>: Nikhil Nandagopan</li>
-              <li>: B +ve</li>
-              <li>: Fever, Headache, Cough</li>
+              <li id="pid">: PID001</li>
+              <li id="pname">: Nikhil Nandagopan</li>
+              <li id="pblood">: B +ve</li>
+              <li id="psymptoms">: Fever, Headache, Cough</li>
             </ul>
           </div>
           <div
-            class="other p-5"
+            class="other p-5 "
             style="
               display: flex;
               flex-direction: column;
@@ -157,7 +172,7 @@
         <!-- end patient details -->
         <!-- doctors notes -->
         <div
-          class="section"
+          class="section "
           style="margin: 2rem 0rem 0 2rem; padding-left: 2rem"
         >
           <div class="ailment mb-3">
@@ -199,7 +214,7 @@
             </div>
             <div class="tests mb-3">
               <!-- card -->
-              <div
+              <!-- <div
                 class="card p-3"
                 style="
                   display: flex;
@@ -216,7 +231,7 @@
                 <div class="removebtn">
                   <div class="btn btn-danger">remove</div>
                 </div>
-              </div>
+              </div> -->
               <!-- end card -->
             </div>
           </div>
@@ -247,7 +262,7 @@
               
             </div>
             <!-- card -->
-            <div
+            <!-- <div
             class="card p-3"
             style="
               display: flex;
@@ -264,14 +279,17 @@
             <div class="removebtn">
               <div class="btn btn-danger">remove</div>
             </div>
-          </div>
+          </div> -->
           <!-- end card -->
+        </div>
+        <div class="errorWarning">
+          <p class="text-danger text-center" id="errorMsg"></p>
         </div>
         <div class="section row p-5"> 
             <div class="btn btn-primary" id="submitBtn">Submit</div>
         </div>
       </div>
     </div>
-    <script src="../../scripts/Doctor/script.js"></script>
+    <script src="../../scripts/Doctor/patientDetails/script.js"></script>
   </body>
 </html>

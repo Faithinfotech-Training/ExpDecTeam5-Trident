@@ -1,3 +1,10 @@
+.nav-btn {
+  color: #14213d;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 1rem 0 1rem;
+}
+
 input {
   width: 100%;
   padding: 12px 20px;
@@ -25,4 +32,13 @@ input {
 .add {
   padding: 12px 20px;
   margin: 8px 0;
+}
+.hide {
+  display: none;
+}
+.suceessSubmission {
+  display: none;
+}
+#hide {
+  display: none;
 }

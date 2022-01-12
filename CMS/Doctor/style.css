@@ -8,3 +8,7 @@
 .btn-primary {
   background: rgb(60, 136, 243);
 }
+#filterBtn::hover {
+  background-color: rgb(60, 136, 243);
+  color: white;
+}
